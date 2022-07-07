@@ -1,7 +1,7 @@
 import pandas as pd
 import tkinter
 import matplotlib
-matplotlib.use("TkAgg") # or try TkAgg if not working, weird stuff happens here
+matplotlib.use("TkAgg")
 import matplotlib.pyplot as plt
 import numpy as np
 

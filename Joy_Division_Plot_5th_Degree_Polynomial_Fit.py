@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.optimize import curve_fit
 
-data = pd.read_csv('attempt_new.txt',sep='\s+',header=None)
+data = pd.read_csv('attempt_new.txt',sep='\s+',header=None) # this is the data corresponding to the .tim timeseries file, converted to txtto be able to use it here
 data = pd.DataFrame(data)
 data.columns = ['time', 'amp']
 

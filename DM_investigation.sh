@@ -21,20 +21,16 @@ read upper
 echo “Please enter DM steps”
 read steps
 
-# DM Loop
+# DM 
 
-for dm in $(seq $lower $steps $upper )
-do
-      echo "DM is $dm"
-      dedisperse $filfile".fil" -d $dm -i badchans > $filfile".tim"
-      echo "dedisperse is done"
-      seek $filfile".tim" -pulse -A
-      echo "seek is done"
-      step $lower $upper $steps > dmlist
-      echo "dmlist updated"
-      hunt $filfile
-      echo "hunt is done"
-      best $filfile".prd" -v
-done
+dedisperse $filfile".fil" -d 0.0 -i badchans > $filfile".tim"
+echo "dedisperse is done"
+seek $filfile".tim" -pulse -A
+echo "seek is done"
+step $lower $upper $steps > dmlist
+echo "dmlist updated"
+hunt $filfile
+echo "hunt is done"
+best $filfile".prd" -v
 
 exit

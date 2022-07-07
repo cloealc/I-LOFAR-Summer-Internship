@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Jul  7  2022
+
+@author: cloealcaria
+"""
+
 import pandas as pd
 import tkinter
 import matplotlib
